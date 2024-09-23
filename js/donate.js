@@ -10,6 +10,7 @@ document.getElementById('donate-now1').addEventListener('click', function() {
         document.getElementById('main-balance').innerText = afterMainBalance;
         document.getElementById('donate-amount1').value = ' ';
 
+
         const currentDateTime = new Date();
         const formattedDateTime = currentDateTime.toString();
 
@@ -23,8 +24,10 @@ document.getElementById('donate-now1').addEventListener('click', function() {
             </div>
         `
         document.getElementById('history-part').appendChild(div);
+        document.getElementById('my_modal_5').showModal();
     } else {
         alert('wrong input');
+        return;
 
     }
 })
@@ -54,6 +57,7 @@ document.getElementById('donate-now2').addEventListener('click', function() {
             </div>
         `
         document.getElementById('history-part').appendChild(div);
+        document.getElementById('my_modal_5').showModal();
     } else {
         alert('wrong input');
 
@@ -85,6 +89,7 @@ document.getElementById('donate-now3').addEventListener('click', function() {
             </div>
         `
         document.getElementById('history-part').appendChild(div);
+        document.getElementById('my_modal_5').showModal();
     } else {
         alert('wrong input');
 
