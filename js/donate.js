@@ -11,6 +11,7 @@ document.getElementById('donate-now1').addEventListener('click', function() {
         document.getElementById('donate-amount1').value = ' ';
     } else {
         alert('wrong input');
+        return;
     }
 })
 
@@ -27,6 +28,7 @@ document.getElementById('donate-now2').addEventListener('click', function() {
         document.getElementById('donate-amount2').value = ' ';
     } else {
         alert('wrong input');
+        return;
     }
 })
 
@@ -43,5 +45,6 @@ document.getElementById('donate-now3').addEventListener('click', function() {
         document.getElementById('donate-amount3').value = ' ';
     } else {
         alert('wrong input');
+        return;
     }
 })
