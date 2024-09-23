@@ -9,6 +9,20 @@ document.getElementById('donate-now1').addEventListener('click', function() {
         const afterMainBalance = mainBalance - donateAmount1;
         document.getElementById('main-balance').innerText = afterMainBalance;
         document.getElementById('donate-amount1').value = ' ';
+
+        const currentDateTime = new Date();
+        const formattedDateTime = currentDateTime.toString();
+
+        const div = document.createElement('div')
+        div.innerHTML = `
+        <div class="card bg-base-100 w-full shadow-xl">
+                <div class="card-body">
+                <h2 class="card-title">${donateAmount1} Taka is Donated for famine-2024 at Noakhali, Bangladesh </h2>
+                 <p>${formattedDateTime}</p>
+                </div>
+            </div>
+        `
+        document.getElementById('history-part').appendChild(div);
     } else {
         alert('wrong input');
 
@@ -26,6 +40,20 @@ document.getElementById('donate-now2').addEventListener('click', function() {
         const afterMainBalance = mainBalance - donateAmount2;
         document.getElementById('main-balance').innerText = afterMainBalance;
         document.getElementById('donate-amount2').value = ' ';
+
+        const currentDateTime = new Date();
+        const formattedDateTime = currentDateTime.toString();
+
+        const div = document.createElement('div')
+        div.innerHTML = `
+        <div class="card bg-base-100 w-full shadow-xl">
+                <div class="card-body">
+                <h2 class="card-title">${donateAmount2} Taka is Donated for Flood Relief in Feni, Bangladesh </h2>
+                 <p>${formattedDateTime}</p>
+                </div>
+            </div>
+        `
+        document.getElementById('history-part').appendChild(div);
     } else {
         alert('wrong input');
 
@@ -43,6 +71,20 @@ document.getElementById('donate-now3').addEventListener('click', function() {
         const afterMainBalance = mainBalance - donateAmount3;
         document.getElementById('main-balance').innerText = afterMainBalance;
         document.getElementById('donate-amount3').value = ' ';
+
+        const currentDateTime = new Date();
+        const formattedDateTime = currentDateTime.toString();
+
+        const div = document.createElement('div')
+        div.innerHTML = `
+        <div class="card bg-base-100 w-full shadow-xl">
+                <div class="card-body">
+                <h2 class="card-title">${donateAmount3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </h2>
+                 <p>${formattedDateTime}</p>
+                </div>
+            </div>
+        `
+        document.getElementById('history-part').appendChild(div);
     } else {
         alert('wrong input');
 
