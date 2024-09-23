@@ -31,7 +31,7 @@
                 <div class="stats shadow">
                     <div class="stat flex">
                         <img class="object-scale-down" src="./assets/coin.png" alt="">
-                        <div class="stat-value text-xl font-medium">5500</div>
+                        <div id="main-balance" class="stat-value text-xl font-medium">5500</div>
                         <div class="stat-value text-xl font-medium">BDT</div>
 
                     </div>
@@ -54,7 +54,7 @@
                 <div class="stats shadow bg-gray-200 w-44">
                     <div class="stat flex ">
                         <img class="object-scale-down" src="./assets/coin.png" alt="">
-                        <div class="stat-value text-xl font-medium">0</div>
+                        <div id="current-balance1" class="stat-value text-xl font-medium">0</div>
                         <div class="stat-value text-xl font-medium">BDT</div>
 
                     </div>
@@ -65,8 +65,8 @@
                     hope, and restoring the devastated areas. Together, we can support Noakhali in this time of need and make a difference in the lives of those who are suffering.</p>
                 <div class="card-actions ">
                     <div class="inner-last flex flex-col space-y-4 ">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[650px] w-96 text-base font-light" />
-                        <button class="btn btn-primary bg-[#B4F461] text-black text-xl font-semibold px-12 lg:w-[650px] w-96">Donate Now</button>
+                        <input id="donate-amount1" type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[650px] w-96 text-base font-light" />
+                        <button class="btn btn-primary bg-[#B4F461] text-black text-xl font-semibold px-12 lg:w-[650px] w-96" id="donate-now1">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                 <div class="stats shadow bg-gray-200 w-44">
                     <div class="stat flex ">
                         <img class="object-scale-down" src="./assets/coin.png" alt="">
-                        <div class="stat-value text-xl font-medium">600</div>
+                        <div id="current-balance2" class="stat-value text-xl font-medium">600</div>
                         <div class="stat-value text-xl font-medium">BDT</div>
 
                     </div>
@@ -92,8 +92,8 @@
                     take time, but with your help, we can pave the way for recovery. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 <div class="card-actions ">
                     <div class="inner-last flex flex-col space-y-4 ">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[650px] w-96 text-base font-light" />
-                        <button class="btn btn-primary bg-[#B4F461] text-black text-xl font-semibold px-12 lg:w-[650px] w-96">Donate Now</button>
+                        <input id="donate-amount2" type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[650px] w-96 text-base font-light" />
+                        <button class="btn btn-primary bg-[#B4F461] text-black text-xl font-semibold px-12 lg:w-[650px] w-96" id="donate-now2">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 <div class="stats shadow bg-gray-200 w-48">
                     <div class="stat flex ">
                         <img class="object-scale-down" src="./assets/coin.png" alt="">
-                        <div class="stat-value text-xl font-medium">2400</div>
+                        <div id="current-balance3" class="stat-value text-xl font-medium">2400</div>
                         <div class="stat-value text-xl font-medium">BDT</div>
 
                     </div>
@@ -119,8 +119,8 @@
                     these brave individuals and show them that they are not alone. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <div class="card-actions ">
                     <div class="inner-last flex flex-col space-y-4 ">
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[650px] w-96 text-base font-light" />
-                        <button class="btn btn-primary bg-[#B4F461] text-black text-xl font-semibold px-12 lg:w-[650px] w-96">Donate Now</button>
+                        <input id="donate-amount3" type="text" placeholder="Write Donation Amount" class="input input-bordered lg:w-[650px] w-96 text-base font-light" />
+                        <button class="btn btn-primary bg-[#B4F461] text-black text-xl font-semibold px-12 lg:w-[650px] w-96" id="donate-now3">Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -128,8 +128,9 @@
         <!-- cards section ends here -->
     </main>
     <footer class="bg-[#F9F7F3] h-32 mt-8">
-
     </footer>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/donate.js"></script>
 </body>
 
 </html>
